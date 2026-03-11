@@ -18,9 +18,9 @@
             <nav>
                 <!-- Lista de itens do menu -->
                 <ul class="nav_ul">
-                    <li class="nav_li">Home</li>
-                    <li class="nav_li">Produtos</li>
-                    <li class="nav_li">Contato</li>
+                    <li class="nav_li"><a href="#home">Home</a></li>
+                    <li class="nav_li"><a href="#produtos">Produtos</a></li>
+                    <li class="nav_li"><a href="#produtos">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +32,7 @@
 
     <main>
         <!-- Sobre nós -->
-        <section class="sobre-nos">
+        <section class="sobre-nos" id="home">
             <h2 class="titulos titulo-sobre-nos">Sobre nós</h2>
             <img src="img/hardware.jpg" alt="Hardware" class="img-sobre-nos">
             <p class="text-sobre-nos">Às vezes você só precisa daquele boost, aquele empurrão, aquele foco...
@@ -67,29 +67,56 @@
             <p>Veja no mapa abaixo como nos encontrar.</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.013026084556!2d-46.665902624668455!3d-23.603865778770636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01552cbdfe81%3A0xdb0773c2f842d165!2sMonster%20Energy%20Brasil%20Com%C3%A9rcio%20de%20Bebidas!5e0!3m2!1spt-BR!2sbr!4v1772670966300!5m2!1spt-BR!2sbr"
-                width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="900" height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <!-- Nossos Produtos -->
-        <section class="nossos_produtos">
+        <section class="nossos_produtos" id="produtos">
             <h2 class="titulos titulo_nossos_produtos">Nossos Produtos</h2>
 
             <!-- Listagem de Produtos  -->
             <ul>
-                <li>Monster Energy Original Green</li>
-                <li>Monster Energy Ultra White</li>
-                <li>Monster Energy Juice Mango Loco</li>
-                <li>Monster Energy Fiesta Mango</li>
-                <li>Monster Energy Valentino Rossi</li>
+                <!-- data-img armazena o caminho da imagem -->
+                <li data-img="img/monsterOriginal.jpg">Monster Energy Original Green</li>
+                <li data-img="img/monsterBranco.jpg">Monster Energy Ultra White</li>
+                <li data-img="img/monsterMango.jpg">Monster Energy Juice Mango Loco</li>
+                <li data-img="img/monsterFiesta.jpg">Monster Energy Fiesta Mango</li>
+                <li data-img="img/monsterValentino.jpg">Monster Energy Valentino Rossi</li>
             </ul>
 
             <!-- Imagem exemplo produtos -->
-            <img src="img/Produto.jpg" class="img_nossos_produtos">
+            <img src="img/monsterOriginal.jpg" class="img_nossos_produtos" id="imagemProduto">
         </section>
 
     </main>
 
+    <script>
+        /* Selecionar todos os produtos (li) */
+        const produtos = document.querySelectorAll('.nossos_produtos ul li');
+        /* Selecionar Imagem */
+        const imagemProduto = document.getElementById('imagemProduto');
+
+        // Adicionar evento de hover a cada produto
+        produtos.forEach(produto => {
+            produto.addEventListener('mouseenter', function() {
+                /* Cria a váriavel (Const é porque não muda) armazenando o caminho da imagem que estava ventro do atributo data-img */
+                const imagemSrc = this.getAttribute('data-img');
+                /* Seleciona a imagem (Cujo id é imagemProduto) e altera o src (source) */
+                imagemProduto.src = imagemSrc;
+                /* Efeito visual para a mudança da imagem */
+                imagemProduto.style.opacity = '0.8';
+            });
+
+            /* Efieto visual ao tirar o mouse */
+            produto.addEventListener('mouseleave', function() {
+                imagemProduto.style.opacity = '1';
+            });
+
+            // Cursor pointer
+            produto.style.cursor = 'pointer';
+        });
+    </script>
 
 </body>
 

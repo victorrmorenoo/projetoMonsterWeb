@@ -1,4 +1,12 @@
 /* Padronização da Página */
+:root {
+    --cor-monster: #a5ce39
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,10 +15,15 @@ body {
     color: #FFF;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .titulos {
     text-align: center;
     font-size: 35px;
-    color: #a5ce39;
+    color: var(--cor-monster);
 }
 
 /* Estilizando o Header */
@@ -52,9 +65,8 @@ header {
     font-size: 20px;
 }
 
-.nav_li:hover {
-    text-decoration: underline;
-    color: #a5ce39;
+.nav_li:hover a:hover{
+    color: var(--cor-monster);
     transition: 0.2s;
 }
 
@@ -115,7 +127,8 @@ header {
     float: inline-end;
     margin-right: 25px;
     border-radius: 10px;
-    box-shadow: 10px 15px 20px #2a350e;;
+    box-shadow: 10px 15px 20px #2a350e;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .nossos_produtos ul {
@@ -127,10 +140,19 @@ header {
 .nossos_produtos li {
     margin-bottom: 15px;  
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nossos_produtos li:hover {
+    color: var(--cor-monster);
+    background-color: rgba(165, 206, 57, 0.1);
+    padding-left: 20px;
 }
 
 /* Estilização do ponto da lista */
 /* Exemplo com ::marker */
 li::marker {
-    color: #a5ce39;
+    color: var(--cor-monster);
 }
