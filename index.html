@@ -83,32 +83,32 @@
       <!-- Listagem de Produtos  -->
       <div class="div_nossosprodutos">
         <ul>
-          <li>Monster Energy Original Green</li>
-          <li>Monster Energy Ultra White</li>
-          <li>Monster Energy Juice Mango Loco</li>
-          <li>Monster Energy Fiesta Mango</li>
-          <li>Monster Energy Valentino Rossi</li>
+          <li onmouseover="document.getElementById('img_nossos_produtos').style.backgroundImage='url(img/produtos/monsterOriginal.jpg)'">Monster Energy Original Green</li>
+          <li onmouseover="document.getElementById('img_nossos_produtos').style.backgroundImage='url(img/produtos/monsterUltraWhite.png)'">Monster Energy Ultra White</li>
+          <li onmouseover="document.getElementById('img_nossos_produtos').style.backgroundImage='url(img/produtos/monsterJuiceMangoLoco.png)'">Monster Energy Juice Mango Loco</li>
+          <li onmouseover="document.getElementById('img_nossos_produtos').style.backgroundImage='url(img/produtos/monsterUltraFiestaMango.png)'">Monster Energy Fiesta Mango</li>
+          <li onmouseover="document.getElementById('img_nossos_produtos').style.backgroundImage='url(img/produtos/monsterJuiceVR46ValentinoRossi.png)'">Monster Energy Valentino Rossi</li>
         </ul>
 
         <!-- Imagem exemplo produtos -->
-        <img src="img/produtos/monsterOriginal.jpg" class="img_nossos_produtos" />
+        <div id="img_nossos_produtos" style="width: 300px; height: 300px; background-size: cover;"></div>
       </div>
     </section>
-
+    
     <!-- Vídeo do YouTube -->
     <section class="video">
       <iframe class="video_youtube" width="560" height="315"
-        src="https://www.youtube.com/embed/Mloj5N-iRQM?si=titdZPlqIX1skLRE" title="YouTube video player" frameborder="0"
-        allow="accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      src="https://www.youtube.com/embed/Mloj5N-iRQM?si=titdZPlqIX1skLRE" title="YouTube video player" frameborder="0"
+      allow="accelerometer;
+      autoplay;
+      clipboard-write;
+      encrypted-media;
+      gyroscope;
+      picture-in-picture;
+      web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
   </main>
-
+  
   <!-- Rodapé -->
   <footer>
     <img src="img/logo.png" title="Monster Energy" class="logoFooter">
@@ -123,5 +123,9 @@
     <p class="textoFooter">&copy; 2026 <span>Monster Energy</span>. Todos os direitos reservados.</p>
   </footer>
 </body>
+
+<script>
+  
+</script>
 
 </html>

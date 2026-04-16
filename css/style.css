@@ -118,6 +118,7 @@ header {
 .nossos_produtos {
   text-align: justify;
   font-size: 16.5px;
+  height: 550px;
 }
 
 .titulo_nossos_produtos {
@@ -178,8 +179,9 @@ li::marker {
   margin-top: 100px;
   border-radius: 10px;
   box-shadow: 10px 15px 20px #27310c;
-  margin-left: -15%;
+  margin-left: -8%;
   margin-bottom: 100px;
+  background-image: ('');
 }
 
 /* FOOTER */
@@ -220,4 +222,14 @@ footer i {
   font-size: 20px;
   margin-left: 15px;
   color: var(--cor-monster)
+}
+
+.imgg_nossos_produtos {
+  margin-right: 25px;
+  border-radius: 10px;
+  box-shadow: 10px 15px 20px #27310c;
+  transition: opacity 0.3s ease-in-out;
+  background-image: url('img/produtos/monsterOriginal.jpg');
+  width: auto;
+  height: auto;
 }
