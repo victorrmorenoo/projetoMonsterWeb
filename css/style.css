@@ -133,9 +133,12 @@ header {
 }
 
 .img_nossos_produtos {
-  width: 40%;
+  width: 350px; 
+  height: 350px; 
+  background-size: cover; 
+  background-image: url('img/produtos/monsterOriginal.jpg');
   float: inline-end;
-  margin-right: 25px;
+  margin-right: 100px;
   border-radius: 10px;
   box-shadow: 10px 15px 20px #27310c;
   transition: opacity 0.3s ease-in-out;
@@ -222,14 +225,4 @@ footer i {
   font-size: 20px;
   margin-left: 15px;
   color: var(--cor-monster)
-}
-
-.imgg_nossos_produtos {
-  margin-right: 25px;
-  border-radius: 10px;
-  box-shadow: 10px 15px 20px #27310c;
-  transition: opacity 0.3s ease-in-out;
-  background-image: url('img/produtos/monsterOriginal.jpg');
-  width: auto;
-  height: auto;
 }

@@ -1,0 +1,89 @@
+/* Padronização da Página */
+:root {
+  --cor-monster: #a5ce39;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #181818;
+  color: #fff;
+  background: linear-gradient(#181818, #121606);
+}
+
+/* Padronização dos Produto */
+.infoProduto {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px; 
+    padding-bottom: 120px;
+}
+
+.tituloInfoProduto {
+    font-size: 35px;
+    color: var(--cor-monster);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.imgInfoProduto {
+    width: 420px; 
+    height: 420px; 
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.descricaoProduto {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #100f0d;
+  padding: 30px 10px 10px 0;
+  margin-top: 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+}
+
+footer span {
+  color: var(--cor-monster);
+  font-weight: bold;
+}
+
+.logoFooter {
+  width: 10%;
+  padding-left: 90%;
+}
+
+.linkRedesSociais {
+  color: #fff;
+  margin-left: 5px;
+  transition: color 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.linkRedesSociais:hover {
+  color: var(--cor-monster);
+}
+
+footer i {
+  font-size: 20px;
+  margin-left: 15px;
+  color: var(--cor-monster)
+}

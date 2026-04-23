@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="css/produtos.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <title>Produtos - Monster Energy</title>
+
+  <script>
+    function infoProduto(nome, descricao, imagem) {
+      const url = `pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&descricaoProduto=${encodeURIComponent(descricao)}&imagemProduto=${encodeURIComponent(imagem)}`;
+
+      window.open(url, "_blank", "width=800,height=900");
+    }
+  </script>
+
 </head>
 
 <body>
@@ -48,11 +57,13 @@
     <!---------------------->
     <!-- MONSTER ORIGINAL -->
     <!---------------------->
+    <div class="card" onclick="infoProduto('Monster Energy Original Green',
+      'Surpreenda-se com a lata do energético mais animal do planeta. Com duas vezes mais energia do que uma bebida energética regular. Monster possui uma presença marcante e um sabor único! Inconfundível.',
+      'img/produtos/monsterOriginal.jpg');">
 
-    <div class="card">
       <img src="img/produtos/monsterOriginal.jpg" alt="Monster Energy Original Green">
       <h2>Monster Energy Original Green</h2>
-      <p class="descricao">Surpreenda-se com a lata do energético mais animal do planeta.</p>
+      <p class="descricao">O sabor de Monster é ao mesmo tempo marcante e suave.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -60,10 +71,13 @@
     <!-- MONSTER ZERO SUGAR -->
     <!------------------------>
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Zero Sugar',
+      'Faz tempo que a gente ouve a galera pedindo um Monster zero açúcar. E esse era o desafio! Fazer uma bebida com menos calorias, sem açúcar e gostosa a ponto de manter a pegada já conhecida da Monster, não foi moleza. Esse é o nosso DNA. Inovar e garantir que o sabor único da Monster possa ir para o seu rolê com menos calorias e zero açúcar. Ficou irado!',
+      'img/produtos/monsterZero.png');">
+
       <img src="img/produtos/monsterZero.png" alt="Monster Energy">
       <h2>Monster Energy Zero Sugar</h2>
-      <p class="descricao">Faz tempo que a gente ouve a galera pedindo um Monster zero açúcar. E esse era o desafio!</p>
+      <p class="descricao">O sabor de Monster original, agora zero açúcar.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -71,11 +85,13 @@
     <!-- MONSTER ABSOLUTELY ZERO -->
     <!----------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Absolutely Zero',
+      'Monster Energy Absolutely Zero traz o mesmo sabor e o mesmo punch energético do original, com menos calorias e sem açúcares.',
+      'img/produtos/monsterAbsolutelyZero.png');">
+
       <img src="img/produtos/monsterAbsolutelyZero.png" alt="Monster Energy Absolutely Zero">
       <h2>Monster Energy Absolutely Zero</h2>
-      <p class="descricao">Monster Energy Absolutely Zero traz o mesmo sabor e o mesmo punch energético do original, com
-        menos calorias e sem açúcares.</p>
+      <p class="descricao">Sabor Monster Energy com um leve toque cítrico.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -83,11 +99,13 @@
     <!-- MONSTER ENERGY 269ML -->
     <!-------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Original Green 269ML',
+      'Chegou a nova lata de Monster Energy. A marca de energético dos esportes radicais, da música e do gaming, agora traz energia para você curtir a noite toda. O sabor insano de Monster Green, agora em uma lata de 269 ml. Leve, refrescante e com a energia de sempre. Vamos invadir a noite brasileira!',
+      'img/produtos/monsterEnergy269ml.png');">
+
       <img src="img/produtos/monsterEnergy269ml.png" alt="Monster Energy 269ML">
       <h2>Monster Energy Original Green 269ML</h2>
-      <p class="descricao">Chegou a nova lata de Monster Energy. A marca de energético dos esportes radicais, da música
-        e do gaming.</p>
+      <p class="descricao">O sabor de Monster é ao mesmo tempo marcante e suave.</p>
       <span class="preco">R$ 9,99</span>
     </div>
   </div>
@@ -101,11 +119,12 @@
     <!-- MONSTER ULTRA PARADISE -->
     <!---------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Paradise',
+      'Onde fica o paraíso? Num chalé nas montanhas, numa fazenda á beira do rio ou numa cobertura de luxo na cidade. Quem sabe numa ilha privada com praia de areias brancas, água azul-turquesa e uma suave brisa tropical. Monster Ultra Paradise é puro, refrescante e revigorante como os sabores da ilha. Relaxe a aproveite. O paraíso está logo ali! Sabor kiwi com maçã verde. Sem açúcar!',
+      'img/produtos/monsterUltraParadise.png');">
       <img src="img/produtos/monsterUltraParadise.png" alt="Monster Energy Ultra Paradise">
       <h2>Monster Energy Ultra Paradise</h2>
-      <p class="descricao">Onde fica o paraíso? Num chalé nas montanhas, numa fazenda á beira do rio ou numa cobertura
-        de luxo na cidade.</p>
+      <p class="descricao">Sabor kiwi com maçã verde. Sem açúcar!</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -113,11 +132,12 @@
     <!-- MONSTER ULTRA WHITE -->
     <!------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra White',
+      'Mais refrescante. Mais leve. Monster Energy Zero Ultra é zero açúcar e uma carga completa de nossa mistura de energia Monster.',
+      'img/produtos/monsterUltraWhite.png');">
       <img src="img/produtos/monsterUltraWhite.png" alt="Monster Energy Ultra White">
       <h2>Monster Energy Ultra White</h2>
-      <p class="descricao">Mais refrescante. Mais leve. Monster Energy Zero Ultra é zero açúcar e uma carga completa de
-        nossa mistura de energia Monster.</p>
+      <p class="descricao">Sabor cítrico. Sem acúcar!</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -125,11 +145,12 @@
     <!-- MONSTER ULTRA VIOLET -->
     <!-------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Violet',
+      'Bem-vindo aos anos 70! Época de atitude, livre e positiva, com um estilo único e inconfundível: calças boca de sino com bandanas típicas e estampas tie-dye. Tempo onde o psicodélico, glamour, heavy metal e Rock se misturam em uma harmonia única. Pegou? Então vamos tomar um Monter Ultra Violet! Refrescante, com um sabor doce e picante, tão mágico e potente com o nosso blend clássico Monster Energy. Embarque com a Monster nessa viagem mágica de volta ao tempo.',
+      'img/produtos/monsterUltraViolet.png');">
       <img src="img/produtos/monsterUltraViolet.png" alt="Monster Energy Ultra Violet">
       <h2>Monster Energy Ultra Violet</h2>
-      <p class="descricao">Bem-vindo aos anos 70! Época de atitude, livre e positiva, com um estilo único e
-        inconfundível: calças boca de sino com bandanas típicas.</p>
+      <p class="descricao">Sabor uva cítrica. Sem açúcar!</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -137,12 +158,12 @@
     <!-- MONSTER ULTRA WATERMELON -->
     <!------------------------------>
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Watermelon',
+      'Sob o céu noturno iluminado por fogos de artifício, você tem sua paixão ao seu lado. Com boa música e melhores amigos, é o melhor verão de todos os tempos. Ultra Watermelon é verão em lata, para que você possa apreciá-lo a qualquer hora. Sem açúcar, sabor refrescante, com a mistura explosiva de energia Monster para iluminar as noites quentes de verão.',
+      'img/produtos/monsterUltraWatermelon.png');">
       <img src="img/produtos/monsterUltraWatermelon.png" alt="Monster Energy Ultra Watermelon">
       <h2>Monster Energy Ultra Watermelon</h2>
-      <p class="descricao">Sob o céu noturno iluminado por fogos de artifício, você tem sua paixão ao seu lado. Com boa
-        música e melhores
-        amigos.</p>
+      <p class="descricao">Melancia refrescante. Sem açúcar!</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -150,11 +171,12 @@
     <!-- MONSTER ULTRA PEACHY KEEN -->
     <!------------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Peachy Keen',
+      'Tudo fica bem quando você dá um gole no Ultra Peachy Keen. Zero açúcares, com sabor de pêssego e o nosso blend secreto de Monster Energy. Dos boomers aos zoomers, ele apaixona qualquer um.',
+      'img/produtos/monsterUltraPeachyKeen.png');">
       <img src="img/produtos/monsterUltraPeachyKeen.png" alt="Monster Energy Ultra Peachy Keen">
       <h2>Monster Energy Ultra Peachy Keen</h2>
-      <p class="descricao">Tudo fica bem quando você dá um gole no Ultra Peachy Keen. Zero açúcares, com sabor de
-        pêssego e o nosso blend secreto.</p>
+      <p class="descricao">Sabor pêssego.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -162,10 +184,12 @@
     <!-- MONSTER ULTRA FIESTA MANGO -->
     <!-------------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Fiesta Mango',
+      'Deixe para dormir depois, porque hoje vamos para a “Festa” como se não houvesse amanhã. Ultra Fiesta celebra as noites que duram até o dia e os amigos que agora são família. Zero açúcar, o Ultra Fiesta mistura o sabor tropical da manga com o Ultra que amamos, finalizando com a potência do nosso blend Monster Energy.',
+      'img/produtos/monsterUltraFiestaMango.png');">
       <img src="img/produtos/monsterUltraFiestaMango.png" alt="Monster Ultra Fiesta Mango">
       <h2>Monster Ultra Fiesta Mango</h2>
-      <p class="descricao">Deixe para dormir depois, porque hoje vamos para a “Festa” como se não houvesse amanhã.</p>
+      <p class="descricao">Sabor tropical de manga.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -173,11 +197,12 @@
     <!-- MONSTER ULTRA STRAWBERRY DREAMS -->
     <!------------------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Strawberry Dreams',
+      'Algumas pessoas dizem que morangos são afrodisíacos. Elas afirmam que se você compartilhar um morango duplo com alguém, essa pessoa vai se apaixonar por você. Tudo o que sabemos é que o sabor do fruto em forma de coração é perfeito para nosso novo Ultra zero açúcares. Deliciosamente doce e com um toque de acidez, esse Ultra é suave e tem o sabor dos sonhos. Desenvolvido com paixão com nosso mix único de Monster Energy que você ama, dê um gole e você vai enlouquecer por Ultra Strawberry Dreams.',
+      'img/produtos/monsterUltraStrawberryDreams.png');">
       <img src="img/produtos/monsterUltraStrawberryDreams.png" alt="Monster Ultra Strawberry Dreams">
       <h2>Monster Ultra Strawberry Dreams</h2>
-      <p class="descricao">Tudo o que sabemos é que o sabor do fruto em forma de coração é perfeito para nosso novo
-        Ultra zero açúcares.</p>
+      <p class="descricao">Sabor Morango.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -185,11 +210,12 @@
     <!-- MONSTER ULTRA ULTRA PARADISE 269ML -->
     <!---------------------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Ultra Paradise 269ML',
+      'Onde fica o paraíso? Num chalé nas montanhas, numa fazenda á beira do rio ou numa cobertura de luxo na cidade. Quem sabe numa ilha privada com praia de areias brancas, água azul-turquesa e uma suave brisa tropical.',
+      'img/produtos/monsterUltraParadise269ml.png');">
       <img src="img/produtos/monsterUltraParadise269ml.png" alt="Monster Energy Ultra Paradise 269ML">
       <h2>Monster Energy Ultra Paradise 269ML</h2>
-      <p class="descricao">Onde fica o paraíso? Num chalé nas montanhas, numa fazenda á beira do rio ou numa cobertura
-        de luxo na cidade.</p>
+      <p class="descricao">Sabor kiwi com maçã verde.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -204,11 +230,12 @@
     <!-- MONSTER DRAGON ICE TEA LIMÃO -->
     <!---------------------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Dragon Ice Tea Limão',
+      'Energético em formato de chá, sem gás com leve toque de limão. Inspirado em tradições milenares da china.',
+      'img/produtos/monsterDragonIceTeaLimao.png');">
       <img src="img/produtos/monsterDragonIceTeaLimao.png" alt="Monster Energy Dragon Ice Tea Limão">
       <h2>Monster Energy Dragon Ice Tea Limão</h2>
-      <p class="descricao">Energético em formato de chá, sem gás com leve toque de limão. Inspirado em tradições
-        milenares da china.</p>
+      <p class="descricao">Chá gelado de limão com energético.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 
@@ -218,11 +245,12 @@
     <!-- MONSTER DRAGON ICE TEA PEACH -->
     <!---------------------------------------->
 
-    <div class="card">
+    <div class="card" onclick="infoProduto('Monster Energy Dragon Ice Tea Peach',
+      'Energético em formato de chá, sem gás com leve toque de pêssego. Inspirado em tradições milenares da china.',
+      'img/produtos/monsterDragonIceTeaPeach.png');">
       <img src="img/produtos/monsterDragonIceTeaPeach.png" alt="Monster Energy Dragon Ice Tea Peach">
       <h2>Monster Energy Dragon Ice Tea Peach</h2>
-      <p class="descricao">Energético em formato de chá, sem gás com leve toque de pêssego. Inspirado em tradições
-        milenares da china.</p>
+      <p class="descricao">Chá gelado de pêssego com energético.</p>
       <span class="preco">R$ 9,99</span>
     </div>
 

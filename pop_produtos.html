@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pop_produtos.css">
+    <link rel="icon" type="image/x-icon" href="img/icone.ico" />
+    <script src="script.js"></script>
+    <title>Monster Energy Original Green</title>
+</head>
+
+<body>
+    <div class="infoProduto">
+        <h1 class="tituloInfoProduto" id="tituloInfoProduto"></h1>
+        <img src="" class="imgInfoProduto" id="imgInfoProduto">
+        <p class="descricaoProduto" id="descricaoProduto"></p>
+
+        <!-- Captura as informações do parâmetro -->
+         <script>
+            function getParametro(infoCapturar) {
+                let urlParametro = new URLSearchParams(window.location.search);
+                return urlParametro.get(infoCapturar);
+            }
+         </script>
+
+         <!-- Exibe as informações capturadas -->
+         <script>
+            document.getElementById("tituloInfoProduto").textContent = getParametro("nomeProduto");
+            document.getElementById("descricaoProduto").textContent = getParametro("descricaoProduto");
+            document.getElementById("imgInfoProduto").src = getParametro("imagemProduto");
+         </script>
+    </div>
+</body>
+
+</html>
