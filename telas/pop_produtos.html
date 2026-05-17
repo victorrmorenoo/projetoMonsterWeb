@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pop_produtos.css">
+    <link rel="icon" type="image/x-icon" href="img/icone.ico" />
+    <title>Produto</title>
+</head>
+
+<body>
+    <div class="infoProduto">
+        <h1 class="tituloInfoProduto" id="tituloInfoProduto"></h1>
+        <!-- <img src="" class="imgInfoProduto" id="imgInfoProduto"> -->
+        <div class="slider">
+            <button id="prevBtn" class="btn-slider">&#10094;</button>
+            <img id="slider-img" class="imgInfoProduto" src="" alt="">
+            <button id="nextBtn" class="btn-slider">&#10095;</button>
+        </div>
+        <p class="descricaoProduto" id="descricaoProduto"></p>
+
+        <!-- Captura as informações do parâmetro -->
+        <script>
+            function getParametro(infoCapturar) {
+                let urlParametro = new URLSearchParams(window.location.search);
+                return urlParametro.get(infoCapturar);
+            }
+        </script>
+
+        <!-- Exibe as informações capturadas -->
+        <script>
+            document.getElementById("tituloInfoProduto").textContent = getParametro("nomeProduto");
+            document.getElementById("descricaoProduto").textContent = getParametro("descricaoProduto");
+            /* document.getElementById("imgInfoProduto").src = getParametro("imagemProduto"); */
+
+            const imagens = getParametro("imagemProduto")
+                ? getParametro("imagemProduto").split(",")
+                : [];
+            let index = 0;
+
+            const sliderImg = document.getElementById("slider-img");
+
+            function mostrarImagem() {
+                if(imagens.length > 0) {
+                    sliderImg.src = imagens[index];
+                }
+            }
+
+            document.getElementById("prevBtn").addEventListener("click", () => {
+                index = (index - 1 + imagens.length) % imagens.length;
+                mostrarImagem();
+            });
+
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                index = (index + 1) % imagens.length;
+                mostrarImagem();
+            });
+
+            mostrarImagem();
+        </script>
+    </div>
+</body>
+
+</html>

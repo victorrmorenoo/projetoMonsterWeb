@@ -87,3 +87,31 @@ footer i {
   margin-left: 15px;
   color: var(--cor-monster)
 }
+
+/* Slider (simplificado) */
+.slider {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+
+.btn-slider:hover { 
+  background: rgba(165,206,57,0.95);
+  color: #080800;
+}
