@@ -136,11 +136,11 @@ select {
   margin: 0 0 20px;
   padding: 15px;
   border-radius: 8px;
-  width: 58%;
+  width: 63.8%;
 }
 
 input[type="radio"] {
-  margin-left: 60px;
+  margin-left: 10px;
 }
 
 .chk {
