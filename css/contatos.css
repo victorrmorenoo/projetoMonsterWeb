@@ -1,0 +1,231 @@
+/* Padronização da Página */
+:root {
+  --cor-monster: #a5ce39;
+  --cor-monster-hover: #6c8925; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #181818;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.titulos {
+  text-align: center;
+  font-size: 35px;
+  color: var(--cor-monster);
+}
+
+/* Estilizando o Header */
+.divHeader {
+  position: relative;
+}
+
+nav {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  right: 2%;
+}
+
+header {
+  background-color: #100f0d;
+  padding: 10px 0 10px 0;
+  margin-bottom: 40px;
+
+}
+
+/* Estilização da logo */
+.logo {
+  height: 100px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/* Estilização dos botões da navbar */
+.nav_ul {
+  padding-top: 14px;
+}
+
+.nav_li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.2s;
+  display: inline;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.nav_li:hover a:hover {
+  color: var(--cor-monster);
+  transition: 0.2s;
+}
+
+.nav_ativo a {
+  color: var(--cor-monster);
+  transition: 0.2s;
+}
+
+.nav_ativo a:hover {
+  color: #6c8925 !important;
+}
+
+/* Formulário */
+.contatos-titulo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 2%;
+  color: var(--cor-monster);
+  list-style: none;
+}
+
+.contatos-texto {
+  padding-left: 5%;
+  font-size: 18px;
+}
+
+form {
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+
+}
+
+legend {
+  color: var(--cor-monster);
+  font-weight: bold;
+  font-size: 25px !important;
+}
+
+
+fieldset {
+  width: 75%;
+  padding-left: 5%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 15px ;
+  width: 85%;
+  border-radius: 8px;
+}
+
+select {
+  margin: 0 0 20px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 58%;
+}
+
+input[type="radio"] {
+  margin-left: 60px;
+}
+
+.chk {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 82%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: var(--cor-monster);
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s all;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.enviar:hover {
+  background: var(--cor-monster-hover);
+}
+
+/* Div do retorno do formulário */
+.divRetorno {
+  display: none;
+  margin-bottom: 83px;
+  margin-top: 50px;
+  margin-left: 4%;
+  background-color: #100f0d;
+  color: #fff;
+  width: 90%;
+  height: 150px;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.contatos-texto-retorno {
+  font-size: 24px;
+}
+
+span {
+  color: var(--cor-monster);
+  font-weight: bold;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #100f0d;
+  padding: 70px 10px 10px 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+}
+
+footer span {
+  color: var(--cor-monster);
+  font-weight: bold;
+}
+
+.logoFooter {
+  width: 10%;
+  padding-left: 90%;
+}
+
+.linkRedesSociais {
+  color: #fff;
+  margin-left: 5px;
+  transition: color 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.linkRedesSociais:hover {
+  color: var(--cor-monster);
+}
+
+footer i {
+  font-size: 20px;
+  margin-left: 15px;
+  color: var(--cor-monster)
+}

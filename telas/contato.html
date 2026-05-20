@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contatos.css">
+    <link rel="icon" type="image/x-icon" href="../img/icone.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Monster Energy | Contatos</title>
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <!-- Logo -->
+            <img src="../../img/logo.png" class="logo" />
+            <!-- Barra de navegação -->
+            <nav>
+                <!-- Lista de itens do menu -->
+                <ul class="nav_ul">
+                    <li class="nav_li"><a href="../index.html">Home</a></li>
+                    <li class="nav_li"><a href="produtos.html">Produtos</a></li>
+                    <li class="nav_li nav_ativo"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <ul class="contatos-titulo">
+            <li class="contatos-item">Contatos</li>
+        </ul>
+<div id="form-container">
+                <p class="contatos-texto">Será uma alegria te atender!
+                    <br><br>
+                    Você pode nos encontrar no Instagram, Whatsapp ou preencher o formulário abaixo:
+                </p>
+                <div id="formRetorno" class="divRetorno">
+                    <p id="textoRetorno" class="contatos-texto-retorno"></p>
+                </div>
+                <form id="frmContato">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome e Sobrenome: </label>
+                        <input type="text" id="nomesobrenome" name="nomesobrenome" class="input-padrao" required>
+
+                        <label>Email: </label>
+                        <input type="email" id="email" name="email" class="input-padrao" placeholder="seuemail@dominio.com">
+
+                        <label>Telefone: </label>
+                        <input type="tel" id="telefone" name="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                        <label>Mensagem: </label>
+                        <textarea cols="70" rows="10" id="mensagem" name="mensagem" class="input-padrao"
+                        placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+                    <label>Como prefere nosso contato?
+                        <input type="radio" value="radio-email" name="Contato"> E-mail
+                        <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                        <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                    </label>
+
+                    <br>
+                    <label>Qual o motivo do seu contato?
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+                    <br>
+                </fieldset>
+
+                <label><input type="checkbox" class="chk"> Gostaria de receber novidades e promoções por email?</label>
+                <input type="submit" id="enviar" value="Enviar Formulário" class="enviar">
+            </form>
+        </div>
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <img src="../img/logo.png" title="Monster Energy" class="logoFooter">
+        <p class="textoFooter">
+            <i class="fa fa-instagram">
+                <a href="https://www.instagram.com/monsterenergy/" target="_blank"
+                    class="linkRedesSociais">@monsterenergy</a>
+            </i>
+            <i class="fa fa-twitter">
+                <a href="https://www.twitter.com/monsterenergy/" target="_blank"
+                    class="linkRedesSociais">@monsterenergy</a>
+            </i>
+        </p>
+        <p class="textoFooter">&copy; 2026 <span>Monster Energy</span>. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/form.js"></script>
+</body>
+
+</html>
