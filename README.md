@@ -81,7 +81,7 @@ Durante o desenvolvimento deste projeto foram praticados conceitos como:
 Victor Moreno
 
 - GitHub: https://github.com/victorrmorenoo
-- LinkedIn: https://www.linkedin.com/
+- LinkedIn: https://www.linkedin.com/in/victormorenodev/
 
 ---
 
